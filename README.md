@@ -12,13 +12,15 @@
 
 1. `docker-compose exec php bash`
 2. `composer install`
-3. 「.env.example」ファイルを コピーして「.env」を作成し、DB の設定を変更
+3. 「.env.example」ファイルを コピーして「.env」を作成し、DB の設定を以下のように変更
 
 ```text
-DB_HOST=
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=laravel_user
+DB_PASSWORD=laravel_pass
 ```
 
 5. アプリケーションキーの作成
@@ -39,11 +41,16 @@ php artisan migrate
 php artisan db:seed
 ```
 
-## ER 図
+## 使用技術(実行環境)
+- PHP8.1 (php-fpm)
+- Laravel 8.83.8
+- MySQL 8.0.26
+- Docker / Docker Compose
 
+## ER 図
+![ER図](./ER.drawio.png)
 
 ## URL
 
 - 開発環境：http://localhost/
 - phpMyAdmin:：http://localhost:8080/
-
