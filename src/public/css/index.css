@@ -1,0 +1,209 @@
+main {
+    min-height: 100vh;
+    /* 画面いっぱいにする場合 */
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-form__heading h2 {
+    font-size: 35px;
+    font-weight: normal;
+    color: #8B7969;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.form__label--item {
+    color: #8B7969;
+    font-size: 14px;
+}
+
+.form__label--required {
+    color: red;
+    font-size: 14px;
+}
+
+.form__input--name {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__input--name input {
+    width: 280px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F4F4F4;
+    
+    appearance: none;
+}
+
+/* .form__input--name input[name="name"] {
+    margin-left: 20px;
+} */
+
+.form__error {
+    height: 30px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input {
+    padding: 10px 20px;
+    width: 600px;
+    border: none;
+    background-color: #F4F4F4;
+
+    appearance: none;
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    padding: 10px 20px;
+    width: 600px;
+    height: 180px;
+    border: none;
+    background-color: #F4F4F4;
+
+    appearance: none;
+    resize: none;
+}
+
+.form__input--radio {
+    display: flex;
+    justify-content: flex-start;
+        /* 左寄せ */
+    gap: 5px;
+        /* ラベル間の余白 */
+    width: 600px;
+    padding-left : 10px;
+}
+
+.form__input--radio input[type="radio"] {
+    appearance: none;
+    /* デフォルト非表示 */
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8B7969;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.form__input--radio input[type="radio"]:checked {
+    background-color: #8B7969;
+    /* 塗りつぶし */
+}
+
+.form__input--radio label {
+    color: #8B7969;
+    padding-right: 20px;
+}
+
+.form__input--tel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.form__input--tel input {
+    padding: 10px;
+    width: 170px;
+    border: none;
+    background-color: #F4F4F4;
+
+    appearance: none;
+}
+
+.form__input--tel input::placeholder {
+    text-align: center;
+}
+
+.form__input--tel span {
+    color: #8B7969;
+}
+
+.form__select {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 600px;
+    position: relative; /* 擬似要素の配置用 */
+}
+
+.form__select select {
+    width: 400px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F4F4F4;
+
+    appearance: none;
+    color: rgba(190, 175, 166, 0.6);  /* ← プレースホルダー風の色 */
+}
+
+/* 1つ目のoption（placeholder）が選ばれている間だけ */
+.form__select select:has(option:first-child:checked) {
+    color: rgba(190, 175, 166, 0.6); /* グレー */
+}
+
+/* それ以外（選択済み）は黒 */
+.form__select select:not(:has(option:first-child:checked)) {
+    color: #333;
+}
+
+.form__select::after {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    left: 340px;
+    /* 右端の位置調整 */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(190, 175, 166, 0.6);
+    /* ▼の色 */
+    pointer-events: none;
+    /* 矢印部分でクリックしても select が動作するように */
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button {
+    margin-top: 40px;
+}
+
+.form__button-submit {
+    padding: 10px 40px;
+    border: none;
+    background: #82756A;
+    color: #fff;
+    cursor: pointer;
+}

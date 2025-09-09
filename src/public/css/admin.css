@@ -1,0 +1,379 @@
+.admin__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.admin__heading h2 {
+    font-size: 35px;
+    font-weight: normal;
+    color: #8B7969;
+}
+
+.admin__wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.admin__box {
+}
+
+.admin__search {
+    margin-bottom: 20px;
+}
+
+.admin__search form {
+    display: flex;
+    flex-wrap: nowrap;
+    /* 画面幅が狭いとき折り返す */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin__search-bar {
+    width: 300px;
+    height: 50px;
+    padding: 5px 10px;
+    border: 1px solid #E3DED9;
+    background-color: #fff;
+}
+
+
+/* 共通ラッパー */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* select 共通デザイン */
+.select-wrapper select {
+    height: 50px;
+    padding: 10px 35px 10px 15px;
+    /* ▼分の余白 */
+    border: none;
+    background-color: #F4F4F4;
+    color: #8B7969;
+    appearance: none;
+}
+
+/* input[type=date] 共通デザイン */
+.select-wrapper.date input[type="date"] {
+    width: 200px;
+    height: 50px;
+    padding: 10px 35px 10px 15px;
+    border: none;
+    background-color: #F4F4F4;
+    color: #8B7969;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Chrome専用 カレンダーアイコン削除 */
+.select-wrapper.date input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* 透明にする */
+    cursor: pointer;
+    /* 手のカーソルに */
+}
+
+/* Chrome専用 スピンやクリアボタン削除 */
+.select-wrapper.date input[type="date"]::-webkit-inner-spin-button,
+.select-wrapper.date input[type="date"]::-webkit-clear-button{
+    display: none;
+}
+
+/* ▼矢印 */
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #8B7969;
+    pointer-events: none;
+}
+
+/* 幅を個別に設定 */
+.select-wrapper.gender select {
+    width: 100px;
+}
+
+.select-wrapper.category select {
+    width: 200px;
+}
+
+.select-wrapper.date input[type="date"] {
+    width: 150px;
+}
+
+.admin__search button {
+    height: 50px;
+    padding: 10px 30px;
+    border: none;
+    background: #82756A;
+    color: #fff;
+    cursor: pointer;
+}
+.admin__search--reset-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    /* ボタンの高さに合わせる */
+    height: 50px;
+    padding: 0 20px;
+    background: #D9C6B5;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.admin__search--reset-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;    
+}
+
+.admin__nav-export {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 20px;
+    background: #E1DBD699;
+    color: #8B7969;
+    cursor: pointer;
+    border: none;
+}
+
+/* ページネーションの横並び用 */
+.pagination ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li a,
+.pagination li span {
+    padding: 5px 10px;
+    border-top: 1px solid#E0DFDE;
+    border-bottom: 1px solid #E0DFDE;
+    border-left: 1px solid #E0DFDE;
+    text-align: center;
+    text-decoration: none;
+    color: #8B7969;
+}
+
+.pagination li:first-child a,
+.pagination li:first-child span {
+    border-left: 1px solid #E0DFDE;
+    border-radius: 5px 0 0 5px;
+    /* 最初の左端 */
+}
+
+.pagination li:last-child a,
+.pagination li:last-child span {
+    border-right: 1px solid #E0DFDE;
+    border-radius: 0 5px 5px 0;
+    /* 最後の右端 */
+}
+
+/* 現在ページ */
+.pagination li span.current {
+    background-color: #8B7969;
+    color: #fff;
+
+}
+
+.pagination li span.current {
+    background-color: #8B7969;
+    color: #fff;
+}
+
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.admin-table {
+    border: 1px solid #E0DFDE;
+}
+
+.admin-table__inner {
+    width: 100%;
+}
+
+.admin-table__header {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 1px solid #E0DFDE;
+    background-color: #8B7969;
+}
+
+.admin-table__text {
+    color: #8B7969;
+    padding: 15px 20px;
+    border-bottom: 1px solid #E0DFDE
+}
+
+.admin-table__text input {
+    color: #8B7969;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.admin-table__text textarea {
+    color: #8B7969;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    /* ユーザーのリサイズ禁止 */
+    background: none;
+    overflow: hidden;
+    /* スクロールバー非表示 */
+    white-space: pre-wrap;
+    /* 折り返し */
+    word-break: break-word;
+    /* 長い単語でも折り返し */
+}
+
+
+.form__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.form__button-submit {
+    padding: 10px 40px;
+    border: none;
+    background: #82756A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__button-modify {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 20px;
+    color: #D9C6B5;
+    background-color: #F4F4F44D;
+    border: 1px solid #D9C6B599;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/* モーダル全体 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal__content {
+    background: #fff;
+    padding: 100px 60px 0 100px;
+    width: 50%;
+    height: 85%;
+    max-width: 90%;
+    position: relative;
+    border: 1px solid #8B7969;
+}
+
+/* 閉じるボタン */
+.modal__close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B7969;
+
+    width: 40px;
+    height: 42px;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+    text-align: center;
+    /* 横中央 */
+    line-height: 40px;
+    /* 縦中央 */
+}
+
+.model__info {
+    display: flex;
+}
+
+/* 情報部分 */
+.modal__info p {
+    display: flex;
+    margin-bottom: 12px;
+    word-break: break-word;
+    /* 長文でも折り返す */
+}
+
+/* ラベル部分 */
+.modal__info p strong {
+    width: 150px;
+    /* ラベル幅を揃える */
+    font-weight: bold;
+    color: #8B7969;
+}
+
+/* 値部分 */
+.modal__info p span {
+    margin-left: 30px;
+    flex: 1;
+    color: #8B7969;
+}
+
+/* 削除ボタン */
+.delete-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.delete-btn {
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: #e74c3c;
+}
