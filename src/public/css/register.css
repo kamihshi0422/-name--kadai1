@@ -57,9 +57,11 @@ main {
 }
 
 .form__error {
+    font-size: 14px;
     height: 20px;
     color: #ff0000;
     text-align: left;
+    text-wrap: nowrap;
 }
 
 .form__input--text input {
@@ -69,12 +71,12 @@ main {
 
     background-color: rgba(240, 240, 240, 0.6);
     border: none;
-    border-radius: 3px;
 
     appearance: none;
 }
 
 .form__button-submit {
+    font-size: 20px;
     padding: 10px 60px;
     border: none;
     background: #82756A;

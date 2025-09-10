@@ -5,11 +5,11 @@ main {
 
 .contact-form__content {
     margin: 0 auto;
-    padding: 30px 15px;
     max-width: 1230px;
 }
 
 .contact-form__heading {
+    margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -22,25 +22,24 @@ main {
 
 .form {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;          
+    max-width: 900px;   
     text-align: center;
 }
 
 .form__group {
     display: flex;
     justify-content: space-between;
-    
-    
 }
 
 .form__label--item {
+    font-size: 20px;
     color: #8B7969;
-    font-size: 14px;
 }
 
 .form__label--required {
     color: red;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .form__input--name {
@@ -82,7 +81,7 @@ main {
 .form__input--textarea textarea {
     padding: 10px 20px;
     width: 600px;
-    height: 180px;
+    height: 130px;
     border: none;
     background-color: #F4F4F4;
 
@@ -119,7 +118,7 @@ main {
 
 .form__input--radio label {
     color: #8B7969;
-    padding-right: 20px;
+    margin-right: 60px;
 }
 
 .form__input--tel {
@@ -193,11 +192,8 @@ main {
 }
 
 .form__button {
-    margin-top: 30px;
-}
-
-.form__button {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .form__button-submit {

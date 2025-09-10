@@ -46,7 +46,7 @@ textarea::placeholder {
 .header__button-submit {
     position: absolute;
     top: 50px;
-    right: 40px;
+    right: 60px;
     transform: translateY(-50%);
     /* 縦中央に揃える */
 

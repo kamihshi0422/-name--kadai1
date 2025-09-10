@@ -1,6 +1,5 @@
 .confirm__content {
     margin: 0 auto;
-    padding: 30px 15px;
     max-width: 1230px;
 }
 
@@ -15,14 +14,12 @@
     color: #8B7969;
 }
 
-
-.form {
-    margin: 0 auto;
-    width: 80%;
-}
-
 .confirm-table {
     border: 1px solid #E0DFDE;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 900px;
 }
 
 .confirm-table__inner {
@@ -41,6 +38,8 @@
 }
 
 .confirm-table__text {
+    font-size: 20px;
+    line-height: 28px;
     color: #8B7969;
     padding: 20px 30px;
     border-bottom: 1px solid #E0DFDE
@@ -48,7 +47,6 @@
 
 .confirm-table__text input {
     color: #8B7969;
-    font-size: 20px;
     width: 100%;
     outline: none;
     border: none;
@@ -56,7 +54,6 @@
 
 .confirm-table__text textarea {
     color: #8B7969;
-    font-size: 20px;
     width: 100%;
     border: none;
     outline: none;
@@ -77,6 +74,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 

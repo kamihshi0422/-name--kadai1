@@ -53,4 +53,5 @@ php artisan db:seed
 ## URL
 
 - 開発環境：http://localhost/
+- 管理画面：http://localhost/admin
 - phpMyAdmin:：http://localhost:8080/

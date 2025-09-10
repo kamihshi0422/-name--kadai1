@@ -50,15 +50,17 @@ main {
 
 .form__group-title {
     color: #8B7969;
-    font-size: 24px;
+    font-size: 25px;
     text-align: left;
     padding-bottom: 10px;
 }
 
 .form__error {
+    font-size: 14px;
     height: 20px;
     color: #ff0000;
     text-align: left;
+    text-wrap: nowrap;
 }
 
 .form__input--text input {
@@ -68,7 +70,6 @@ main {
 
     background-color: rgba(240, 240, 240, 0.6);
     border: none;
-    border-radius: 3px;
 
     appearance: none;
 }
@@ -78,6 +79,7 @@ main {
 }
 
 .form__button-submit {
+    font-size: 20px;
     padding: 10px 40px;
     border: none;
     background:#82756A;

@@ -23,19 +23,19 @@
         <a class="header__logo" href="/">   FashionablyLate</a>
       </div>
        
-        @if (request()->is('register'))
-        {{-- register ページのときは login --}}
-        <a class="header__link-button" href="/login">login</a>
-        @elseif (request()->is('login'))
-        {{-- login ページのときは register --}}
-        <a class="header__link-button" href="/register">register</a>
-        @elseif (request()->is('admin*'))
-        {{-- 管理ページ (admin配下) のときは logout --}}
-        <form action="{{ route('logout') }}" method="POST">
-            @csrf
-          <button type="submit" class="header__button-submit">logout</button>
-        </form>
-         @endif
+      @if (request()->is('register'))
+      {{-- register ページのときは login --}}
+      <a class="header__link-button" href="/login">login</a>
+      @elseif (request()->is('login'))
+      {{-- login ページのときは register --}}
+      <a class="header__link-button" href="/register">register</a>
+      @elseif (request()->is('admin*'))
+      {{-- 管理ページ (admin配下) のときは logout --}}
+      <form action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button type="submit" class="header__button-submit">logout</button>
+      </form>
+      @endif
 
     </div>
   </header>
